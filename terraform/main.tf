@@ -13,6 +13,7 @@ resource "aws_instance" "web_server" {
   user_data = <<-EOF
               #!/bin/bash
               yum update -y
+              sudo amazon-linux-extras enable nginx1
               yum install -y nginx
               echo "<h1>Welcome to My Web App!</h1>" > /usr/share/nginx/html/index.html
               systemctl start nginx
