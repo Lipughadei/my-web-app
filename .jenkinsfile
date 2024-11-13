@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/my-web-app.git' // Replace with your Git repository URL
+                git 'https://github.com/Lipughadei/my-web-app.git' // Replace with your Git repository URL
             }
         }
         stage('Terraform Init') {
